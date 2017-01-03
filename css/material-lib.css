@@ -1,0 +1,363 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+html {
+    width:100%;
+    height: 100%;
+    overflow-x:hidden;
+   font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    background-color:#FAFAFA;
+}
+body {
+    width:100%;
+    height:100%;
+    transition: all 0.5s;
+     font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    opacity: 50;
+}
+p {
+    
+    color:#000000;
+    opacity: 87%;
+    margin:15px;
+}
+.card-p {
+    
+}
+body{
+  text-align: center; 
+}
+
+
+
+button{
+  position: relative;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  background: #89669b;
+  color: white;
+  padding: 18px 60px;
+  border-radius: 2px;
+  font-size: 22px;
+}
+
+.fab{
+  border-radius: 50%;
+  margin:0;
+  padding: 20px;
+}
+
+.material{
+  position:relative;
+  color:white;
+  margin: 20px auto;
+  height:400px;
+  width:500px;
+  background:#f45673;
+  
+}
+
+.ripple{
+  overflow:hidden;
+}
+
+.ripple-effect{
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+
+    
+  animation: ripple-animation 2s;
+}
+
+
+@keyframes ripple-animation {
+    from {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(100);
+      opacity: 0;
+    }
+}
+@keyframes bomb-of-color {
+    
+    0% { background-color: #2196F3;}
+    30% {background-color:#FF9800}
+    40% { background-color: #F44336;
+    }
+    90% {
+        background-color: #2196F3;
+    }
+    100% {
+        background-color: #FF9800;
+    }
+}
+.color-bomb {
+    animation-duration:  9s;
+    animation-name: bomb-of-color;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+.hover:hover {
+     box-shadow: 0 6px 9px rgba(0,0,0,0.24), 0 6px 9px rgba(0,0,0,0.46);
+}
+.nav {
+    height:12%;
+    width:100%;
+    background-color:#2196F3;
+    color:white;
+     position: fixed;
+    top:0;
+   left:0;
+   right:0;
+    bottom:0;
+    margin:0;
+     transition: all 0.5s;
+
+}
+.title {
+    color:white;
+    font-weight: normal;
+    top:0;
+    bottom:0;
+    left:0;
+    margin-top:2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+     transition: all 0.5s;
+
+}
+header {
+    clear: both;
+     width: 100%;
+  padding: 60px 0;
+   transition: all 0.5s;
+
+  /* animation magic */
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out ;
+  transition: all 0.4s ease-in-out ;
+  z-index: 9999;
+  top: 0;
+  position: fixed;
+}
+.header-content {
+    margin-top:40%;
+    height:100%;
+    width:100%;
+     transition: all 0.5s;
+
+}
+.shadow {
+     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+ transition: all 0.5s;
+
+    
+}
+.nav-header {
+    width:100%;
+    height:40%;
+       background-color:#8BC34A;
+       top:0;
+       left:0;
+       right:0;
+        transition: all 0.5s;
+
+       bottom:0;
+       position: fixed;
+       background-attachment: fixed;
+        z-index: 999;
+       display: block;
+        -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+.nav-header-nofix {
+    width:100%;
+    height:40%;
+       background-color:#8BC34A;
+       top:0;
+       left:0;
+       right:0;
+        transition: all 0.5s;
+
+       bottom:0;
+       
+        z-index: 999;
+       display: block;
+        -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+.small {
+     height:10%; transition: all 0.5s;
+
+}
+.smalltxt {
+    height:10%;
+     transition: all 0.5s;
+
+}
+.content {
+      transition: all 0.5s;
+
+
+  padding: 10000px;
+}
+h1 {
+    font-family:roboto;
+    font-weight:normal;
+    color:#000000;
+    opacity:87;
+}
+.htitle-div {
+  position: absolute;
+    margin-bottom:auto;
+    margin-top: auto;
+    text-align: center;
+    
+    width:50%;
+    height:50%;
+    min-height: 10em;
+    vertical-align: middle;
+    height:100%;
+    display: flex;
+    align-items:center;
+   margin-left: 2%;
+      -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.header-title {
+    color:white;
+    position: relative;
+     transition: all 0.5s;
+
+    font-weight: bold;
+    text-align: center;
+}
+.grid-4 {
+    width:100%;
+    height:100%;
+    overflow: hidden;
+     transition: all 0.5s;
+
+}
+.nav-header.active {
+    height:12%;
+    width:100%;
+    background-color:#2196F3;
+     transition: all 0.5s;
+
+    color:white;
+     position: fixed;
+    top:0;
+   left:0;
+   right:0;
+    bottom:0;
+    margin:0;
+}
+.cardi {
+   overflow:hidden;
+  min-width:75%;
+    min-height:50%;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin:15px;
+    
+}
+.card {
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      width:50%;
+      height:50%;
+       transition: all 0.5s;
+background-color: white;
+      overflow:hidden;
+      
+      margin:15px;
+}
+.card-big {
+      box-shadow: 0 9px 12px rgba(0,0,0,0.5), 0 3px 6px rgba(0,0,0,0.23);
+      width:75%;
+      height:75%;
+       transition: all 0.9s;
+background-color: white;
+      overflow:hidden;
+      margin:25px;
+}
+.sub {
+     color: #00000;
+     opacity:54;
+}
+p {
+margin:5px;
+overflow: hidden;
+
+}
+.iframe {
+    width:100%;
+    height:100%;
+     transition: all 0.5s;
+
+    overflow-x:hidden;
+    overflow-y: visible;
+    border:none;
+    margin:auto;
+    min-width:50%;
+    min-height:50%;
+}
+.card-title-div {
+    font-size: small;
+    color:white;
+     transition: all 0.5s;
+
+    display:inline-block;
+    width:100%;
+    height:100%;
+   min-height:100%;
+   clear:both;
+   min-width: 100%;
+    
+}
+.card-actions {
+    bottom:0;
+    left:0;
+    right:0;
+     transition: all 0.5s;
+
+    margin:auto;
+    padding: 10px;
+}
+.card-image {
+   width:100%;
+    height:100%;
+    min-height: 100%;
+    min-width: 100%;
+   display: inline-block;
+   clear: both;
+    transition: all 0.5s;
+
+    background-image: url('https://dummyimage.com/1920%20x%201080/000/000.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.textr {
+      -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
